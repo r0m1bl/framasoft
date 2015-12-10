@@ -2,7 +2,7 @@ FROM debian:latest
 MAINTAINER Romain Bouchaud
 
 
-RUN echo "deb http://http.debian.net/debian jessie-backports main" > /etc/apt/sources.list
+RUN echo "deb http://http.debian.net/debian jessie-backports main" >> /etc/apt/sources.list
 
 RUN apt-get update && apt-get -y upgrade && apt-get -y install openjdk-8-jdk curl unzip && apt-get clean
 
