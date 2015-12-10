@@ -6,4 +6,4 @@ RUN curl -OL https://bitbucket.org/wisemapping/wisemapping-open-source/downloads
 
 RUN unzip wisemapping-v4.0.3.zip
 
-RUN ./start.sh
+RUN wisemapping-v4.0.3/start.sh
