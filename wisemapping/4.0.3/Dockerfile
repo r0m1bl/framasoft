@@ -1,4 +1,5 @@
 FROM debian:latest
+
 MAINTAINER Romain Bouchaud
 
 
@@ -12,4 +13,6 @@ RUN unzip wisemapping-v4.0.3.zip
 
 EXPOSE 8080
 
-CMD ["bash", "./wisemapping-v4.0.3/start.sh"]
+WORKDIR ./wisemapping-v4.0.3
+
+CMD ["bash", "./start.sh"]
